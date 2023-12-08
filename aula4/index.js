@@ -79,10 +79,36 @@ circuloGrande.calcularPerimetro()
 
 
 // Crie uma classe chamada "Livro" com os atributos título, autor e ano de publicação. Implemente um construtor para esta classe. Crie objetos de livros e exiba suas informações. 📖✍️📅
+ class Livro { constructor (título, autor, ano) {
+  this.título = título;
+  this.autor = autor;
+  this.ano = ano;
+ }
+ mostrarDados = () => {
+  console.log(this.título, this.autor, this.ano)
+ }
+ }
 
+ Outlander = new Livro ("Outlander - A viajante do tempo", "Diana Galbadon", 1991)
+ HarryPotter = new Livro ("Harry Potter e a Pedra Gilosofal","J. K. Rowling", 1997 )
 
+ console.log("_____Exercício 5_____")
+ Outlander.mostrarDados()
 // Crie uma classe chamada "Retângulo" com os atributos largura e altura. Adicione um construtor para inicializar esses atributos. Implemente um método para calcular a área do retângulo. Crie objetos de retângulos com diferentes dimensões e exiba suas áreas. 🟩📏
+class Retângulo { constructor (largura, altura) {
+  this.largura = largura;
+  this.altura = altura;
+}
+  calcularAreaRetangulo = () => {
+    console.log(this.altura * this.altura)
+  }
+}
+retanguloPequeno = new Retângulo (3,2)
+retanguloGrande = new Retângulo (6,3)
 
+console.log("_____Exercício 6_____")
+retanguloPequeno.calcularAreaRetangulo()
+retanguloGrande.calcularAreaRetangulo()
 // Desenvolva uma classe chamada "Aluno" com os atributos nome, matrícula e lista de notas. Implemente um construtor para inicializar os atributos e um método para calcular a média das notas do aluno. Crie objetos de alunos e calcule suas médias. 🎓📊
 
 // Crie uma classe chamada "Triângulo" com os atributos lado1, lado2 e lado3. Adicione um construtor para inicializar esses atributos. Implemente um método para verificar se os lados formam um triângulo válido (a soma de dois lados deve ser maior que o terceiro) e outro método para calcular a área do triângulo. Teste com diferentes conjuntos de lados. 📐🔍
